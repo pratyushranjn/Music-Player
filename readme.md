@@ -1,0 +1,1 @@
+"Built a simple, cool music player that syncs songs from local folder! It fetches songs from the folder and offers seamless play, pause, and skip functionalities. Check it out! 🎧 #WebDev #JavaScript #NodeJS #MusicPlayer"

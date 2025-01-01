@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oleo+Script+Swash+Caps:wght@400;700&family=Pacifico&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffff;
+    font-family: "Pacifico", cursive;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #7c15ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-image 0.3s ease-in-out;
+    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+}
+
+.player {
+    height: 74vh;
+    width: 64vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.album {
+    font-size: 20px;
+    margin: 0;
+}
+
+.song-name {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px 0;
+    align-self: center;
+}
+
+.seekbar {
+    width: 100%;
+    height: 5px;
+    background:  #B0BEC5;
+    border-radius: 5px;
+    position: relative;
+    margin: 10px 0;
+    margin-top: 40px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.5px;
+    left: 0;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background: yellow; 
+}
+
+.control {
+    display: flex;
+    align-self: center;
+    gap: 9vh;
+    margin-top: 10px;
+}
+
+i {
+    font-size: 24px;
+    color: #fff;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+i:hover {
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    -webkit-background-clip: text;
+    /* To clip the gradient to the text */
+    -webkit-text-fill-color: transparent;
+}
+
+.color {
+    background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    -webkit-background-clip: text;
+    /* To clip the gradient to the text */
+    -webkit-text-fill-color: transparent;
+}
+
+.color2 {
+    background: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+}
+
+#theme {
+    position: absolute;
+    font-size: 30px;
+    top: 15px;
+    left: 15px;
+    cursor: grab;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile (portrait) */
+@media (max-width: 576px) {
+    .player {
+        height: 80vh;
+        width: 80vw;
+    }
+    
+    .img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .album {
+        font-size: 18px;
+    }
+
+    .song-name {
+        font-size: 16px;
+    }
+
+    .control {
+        gap: 5vh;
+    }
+
+    i {
+        font-size: 20px;
+    }
+}
+
+/* Tablet (portrait and landscape) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .player {
+        height: 70vh;
+        width: 70vw;
+    }
+
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .album {
+        font-size: 20px;
+    }
+
+    .song-name {
+        font-size: 18px;
+    }
+
+    .control {
+        gap: 7vh;
+    }
+
+    i {
+        font-size: 22px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    .player {
+        height: 74vh;
+        width: 64vh;
+    }
+
+    .img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .album {
+        font-size: 20px;
+    }
+
+    .song-name {
+        font-size: 18px;
+    }
+
+    .control {
+        gap: 9vh;
+    }
+
+    i {
+        font-size: 24px;
+    }
+}
+
+
+
