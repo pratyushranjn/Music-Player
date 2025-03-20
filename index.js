@@ -10,6 +10,7 @@ app.use(express.static('public'));
 app.use('/music', express.static('music'));
 
 app.get('/music', (req, res) => {
+    console.log(req)
     fs.readdir(musicFolder, (err, files) => {
         if (err) {
             return res.status(500).send('Unable to scan folder');
